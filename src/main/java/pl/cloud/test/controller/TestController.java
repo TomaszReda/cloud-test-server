@@ -13,13 +13,9 @@ public class TestController {
     @Autowired
     private Configuration cOnfiguration;
 
-
-    @Value("${valores.valor_fijo}")
-    String valorFijo;
-
     @GetMapping("/message")
     public String mesagage() {
-        System.err.println(cOnfiguration.getMaximum());
+        System.err.println(cOnfiguration);
         return "aaaaa";
     }
 
